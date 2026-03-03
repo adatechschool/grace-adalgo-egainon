@@ -16,9 +16,9 @@ const operator = '+'
 calculator(x, y, operator) => return 5
 */
 export const calculator = (x, y, operator) => {
-        if (typeof x != "number" || typeof y!= "number"){
+    if (typeof x != "number" || typeof y!= "number"){
         return "is empty";
-    }else if (operator === "+") {
+    }else if (operator === "+") { 
         return x+y;
     }else if (operator === "-"){
         return x-y;
