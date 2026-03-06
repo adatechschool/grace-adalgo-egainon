@@ -15,10 +15,10 @@ export const arrayToFrench = (array) => {
     }else{
         if(array.length === 2){
             array.splice(array.length - 1, 0, "et");
-            return array.join(" ");
+            return array.join(" "); // join retourne en string, " " entre les é mots
         }else{
             array.splice(array.length - 1, 0, "et");
-            return array.join(", ").replace(", et, ", " et ");
+            return array.join(", ").replace(", et, ", " et ");// pour le dernier "et" et enlever la virgule
         }
     }
 };
