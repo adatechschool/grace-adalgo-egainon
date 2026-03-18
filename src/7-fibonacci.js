@@ -25,5 +25,15 @@ fibonacci(max) => return []
 */
 
 export const fibonacci = (number) => {
+  if (number === 0) return [];
+  if (number === 1) return [0];
 
+  const result = [0, 1]; //on commence à 2
+
+  for (let i = 2; i < number; i++) {
+    const next = result[i - 1] + result[i - 2];
+    result.push(next);
+  }
+
+  return result;
 };
